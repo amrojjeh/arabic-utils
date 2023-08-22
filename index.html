@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arabic Utilities</title>
+  <script type="text/javascript" src="/static/htmx-1.9.4.min.js"></script>
+</head>
+<body translate="no" hx-boost="true">
+  <h1>Arabic -> Safe Buckwalter</h1>
+  <textarea placeholder="أكتب..." lang="ar" name="in" hx-get="/ar2safebw" hx-target="next textarea" hx-trigger="change, keyup delay:200ms changed"></textarea>
+  <textarea lang="en" readonly></textarea>
+</body>
+</html>
+
